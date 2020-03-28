@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Building Modern responsive website with HTML , CSS , JavaScript & Bootstrap Framework">
+    <meta name="Keywords" content="Modern Website , Responsive Website, HTML5 , CSS , JQuery">
+    <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>SOFT TECHNIC</title>
+    <link rel="shortcut icon" href="IMG/logo_transparent.png">
+    <link rel="stylesheet" href="CSS/Bootstrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="CSS/fontawesome/css/fontawesome.min.css">-->
+    <link rel="stylesheet" href="CSS/Animate/animate.css">
+    <link rel="stylesheet" href="CSS/Magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="CSS/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="CSS/Owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/fontawsome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+    <script src="/__/firebase/7.13.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.13.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-analytics.js"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBqDMcM9XSUrXSytVQv1SozilwkA25ulGQ",
+            authDomain: "softtechnic-4fec8.firebaseapp.com",
+            databaseURL: "https://softtechnic-4fec8.firebaseio.com",
+            projectId: "softtechnic-4fec8",
+            storageBucket: "softtechnic-4fec8.appspot.com",
+            messagingSenderId: "48108397925",
+            appId: "1:48108397925:web:18ef6473b2d45c15a56d8c",
+            measurementId: "G-MRSS0ZRMDF"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
+    <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <!--nav class="navbar vesco-top-nav navbar-fixed-top" role="navigation"-->
+            <div class="container-fluid">
+                <div class="vesco-nav-wrapper">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-manu">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#home">
+                            <img src="IMG/logo.png" alt="logo" class="img-responsive img-circle">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="vesco-manu">
+                        <ul class="nav navbar-nav">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#service">Services</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+                            <!-- <li><a class="smooth-scroll" href="#work">Work</a></li> -->
+                            <li><a class="smooth-scroll" href="#team">Team</a></li>
+                            <li><a class="smooth-scroll" href="#testimonials">Testimonial</a></li>
+                            <!-- <li><a class="smooth-scroll" href="#pricing">Pricing</a></li> -->
+                            <!-- <li><a class="smooth-scroll" href="#stats">Stats</a></li> -->
+                            <li><a class="smooth-scroll" href="#clients">Clients</a></li>
+                            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            <li><a onclick="signup()" href="./JS/signup/index.html">Sign Up</a></li>
+                            <li><a   href="./JS/login/index.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Home-->
+    <section id="home">
+        <div id="home-cover" class="bg-parallax animated fadeIn">
+            <div id="home-content-box">
+                <div id="home-content-box-inner" class="text-center">
+                    <div id="home-heading" class="animated zoomIn">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="service">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Services</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon"> <i class="fa fa-paint-brush fa-3x"></i> </div>
+                            <div class="service-item-title">
+                                <h3>Web Design</h3>
+                            </div>
+                            <div class="service-item-desc">
+                                <p>We are working on Designing of website.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon"> <i class="fa fa-laptop fa-3x"></i> </div>
+                            <div class="service-item-title">
+                                <h3>Web Development</h3>
+                            </div>
+                            <div class="service-item-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon"> <i class="fa fa-tablet fa-3x"></i> </div>
+                            <div class="service-item-title">
+                                <h3>MOBILE APPS</h3>
+                            </div>
+                            <div class="service-item-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon"> <i class="fa fa-search fa-3x"></i> </div>
+                            <div class="service-item-title">
+                                <h3>SEO Optimization</h3>
+                            </div>
+                            <div class="service-item-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon"> <i class="fa fa-pencil-square-o fa-3x"></i> </div>
+                            <div class="service-item-title">
+                                <h3>UX Design</h3>
+                            </div>
+                            <div class="service-item-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-item">
+                            <div class="service-item-icon"> <i class="fa fa-life-ring fa-3x"></i> </div>
+                            <div class="service-item-title">
+                                <h3>Support</h3>
+                            </div>
+                            <div class="service-item-desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+        <!--About Right Side with diagonal parallax-->
+        <div id="about-bg-diagonal" class="bg-parallax"></div>
+        <!--About Left Side with Content-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="about-content-box">
+                        <div id="about-content-box-outer">
+                            <div id="about-content-box-inner">
+                                <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <h3>About Soft Technic</h3>
+                                    <div class="content-title-underline"></div>
+                                </div>
+                                <div id="about-desc" class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam consequuntur veniam repellat minus sed maiores, facere cumque tenetur similique sequi aliquam minima quaerat, reprehenderit modi labore ullam harum reiciendis
+                                        odio.
+                                    </p>
+                                </div>
+                                <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"> <a class="btn btn-lg btn-general btn-blue smooth-scroll" href="#work" role="button">Our Work</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Work Section-->
+    <!-- <section id="work">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Our Work</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container-fluid">
+                <div class="row no-gutters wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work1.jpg" title="Work Descripition Gose Here"> <img src="IMG/work1.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work2.jpg" title="Work Descripition Gose Here"> <img src="IMG/work2.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work3.jpg" title="Work Descripition Gose Here"> <img src="IMG/work3.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work4.jpg" title="Work Descripition Gose Here"> <img src="IMG/work4.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work5.jpg" title="Work Descripition Gose Here"> <img src="IMG/work5.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work6.jpg" title="Work Descripition Gose Here"> <img src="IMG/work6.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work7.jpg" title="Work Descripition Gose Here"> <img src="IMG/work7.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="img-wrapper">
+                            <a href="IMG/work8.jpg" title="Work Descripition Gose Here"> <img src="IMG/work8.jpg" class="img-responsive" alt="Work"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!--End Content Box-->
+    </section>
+
+    <!--Team-->
+    <section id="team">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Our Team</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row wow animated fadeInUp" date-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-12">
+                        <div id="team-members" class="owl-carousel owl-theme">
+                            <div class="team-member"> <img src="IMG/team1.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Muhammad Arif</h4>
+                                    <h4 class="team-member-designation">FOUNDER AND CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i
+                                                    class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member"> <img src="IMG/team2.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Muhammad Owais</h4>
+                                    <h4 class="team-member-designation">FOUNDER AND CEO</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="social-icon icon-gray">
+                                                <i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member"> <img src="IMG/team3.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Imran</h4>
+                                    <h4 class="team-member-designation">Assistant</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i
+                                                    class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member"> <img src="IMG/team4.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">G.Ghouse</h4>
+                                    <h4 class="team-member-designation">Assistant 1</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon-gray"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon-gray"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="social-icon-gray"><i class="fa fa-google-plus"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-member"> <img src="IMG/team5.jpg" class="img-responsive" alt="team member">
+                                <div class="team-member-info text-center">
+                                    <h4 class="team-member-name">Owais</h4>
+                                    <h4 class="team-member-designation">Developer</h4>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li><a href="#" class="social-icon icon-gray"><i
+                                                    class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content box-->
+    </section>
+
+    <!--Testimonial-->
+    <section id="testimonials">
+        <div id="testimonials-cover" class="you bg-parallax">
+            <div class="content-box">
+                <div class="content-title content-title-white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3>What Our Customer Say</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+                <div class="container">
+                    <div class="row wow animated bounceInDown" date-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="col-md-12">
+                            <div id="customers-testimonials" class="text-center owl-carousel owl-theme">
+                                <div class="testimonial"> <img src="IMG/test1.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione dolorem vitae nostrum quis atque quibusdam voluptas iste, tempore quidem, minima? Amet corporis, numquam tempora nesciunt ex, consectetur excepturi
+                                            eius.
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p> <strong>Muhammad Owais</strong> <span>CEO & founder of Google</span> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial"> <img src="IMG/test2.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione dolorem vitae nostrum quis atque quibusdam voluptas iste, tempore quidem, minima? Amet corporis, numquam tempora nesciunt ex, consectetur excepturi
+                                            eius.
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p> <strong>Muhammad Owais</strong> <span>CEO & founder of Yahoo</span> </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial"> <img src="IMG/test3.jpg" class="img-responsive img-circle" alt="testimonial">
+                                    <blockquote class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione dolorem vitae nostrum quis atque quibusdam voluptas iste, tempore quidem, minima? Amet corporis, numquam tempora nesciunt ex, consectetur excepturi
+                                            eius.
+                                        </p>
+                                    </blockquote>
+                                    <div class="testimonial-author">
+                                        <p> <strong>Muhammad Owais</strong> <span>CEO & founder of Amazone</span> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pricing-->
+    <!-- <section id="pricing">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Our Pricing</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow animated zoomIn" date-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="pricing-box text-center">
+                            <h4 class="pricing-title"> Basic </h4>
+                            <h3 class="pricing-value">49<sup>$</sup></h3>
+                            <ul class="pricing-spec">
+                                <li>
+                                    <p>500 EMAILS</p>
+                                </li>
+                                <li>
+                                    <p>5GB Disk Space</p>
+                                </li>
+                                <li>
+                                    <p>5GB BANDWITh</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="pricing-btn"> <a class="btn btn-lg btn-general btn-blue" href="#" role="button">PURCHASE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow animated bounceInUp" date-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="pricing-box pricing-box-lg text-center">
+                            <h4 class="pricing-title"> Enterprise </h4>
+                            <h3 class="pricing-value">89<sup>$</sup></h3>
+                            <ul class="pricing-spec">
+                                <li>
+                                    <p>200 EMAILS</p>
+                                </li>
+                                <li>
+                                    <p>25GB Disk Space</p>
+                                </li>
+                                <li>
+                                    <p>25GB BANDWITh</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="pricing-btn"> <a class="btn btn-lg btn-general btn-white" href="#" role="button">PURCHASE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow animated zoomIn" date-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="pricing-box text-center">
+                            <h4 class="pricing-title"> Standard </h4>
+                            <h3 class="pricing-value">69<sup>$</sup></h3>
+                            <ul class="pricing-spec">
+                                <li>
+                                    <p>1s500 EMAILS</p>
+                                </li>
+                                <li>
+                                    <p>15GB Disk Space</p>
+                                </li>
+                                <li>
+                                    <p>15GB BANDWITh</p>
+                                </li>
+                                <li>
+                                    <p>UNLIMITED DOMAINS</p>
+                                </li>
+                            </ul>
+                            <div class="pricing-btn"> <a class="btn btn-lg btn-general btn-blue" href="#" role="button">PURCHASE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--Stats-->
+    <!-- <section id="stats">
+        <div id="stats-cover" class="bg-parallax">
+            <div class="content-box">
+                <div class="content-title content-title-white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h3> We Never Stop Improving</h3>
+                    <div class="content-title-underline"></div>
+                </div>
+                <div class="container">
+                    <div class="row text-center wow animated bounceInLeft" date-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-item"> <i class="fa fa-cloud-download fa-5x"></i>
+                                <h2><span class="counter">30,000</span><span>+</span></h2>
+                                <p>Downloads</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-item"> <i class="fa fa-star-o fa-5x"></i>
+                                <h2><span class="counter">15000</span><span>+</span></h2>
+                                <p>Awards</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-item"> <i class="fa fa-heart fa-5x"></i>
+                                <h2><span class="counter">20,000</span><span>+</span></h2>
+                                <p>Likes</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="stats-item"> <i class="fa fa-check fa-5x"></i>
+                                <h2><span class="counter">25000</span><span>+</span></h2>
+                                <p>recomended</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!--Clients-->
+    <section id="clients">
+        <div class="content-box">
+            <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                <h3>Clients</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <div class="row wow animated bounceInLeft" date-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-12">
+                        <div id="clients-list" class="owl-carousel owl-theme">
+                            <div class="client"> <img src="IMG/you1.png" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you2.png" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you3.png" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you4.png" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you5.png" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you6.png" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you7.jpg" alt="client" class="img-responsive"> </div>
+                            <div class="client"> <img src="IMG/you8.png" alt="client" class="img-responsive"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="contact-left">
+                            <h3>Softtechnic</h3>
+                            <p>We Belive in <strong> Simple </strong>,<strong> Clean </strong> & <strong> Modern
+                                </strong> Design Standard with Responsive Approch. Browse the amaizing work of our company.
+                            </p>
+                            <div id="contact-info">
+                                <address>
+                                    <strong>Head Office:</strong><br>
+                                    <p>Shah Faisal Colony<br>
+                                        Karachi Pakistan </p>
+                                </address>
+                                <div id="Phone-Fax-Email">
+                                    <p> <strong>Phone:</strong> <span>(+92) 3162 650 840 </span><br>
+                                        <strong>FAX:</strong> <span>(+92) 3162 650 840 </span><br>
+                                        <strong>Emails:</strong> <span>info@Softtechnic.com</span><br>
+                                    </p>
+                                </div>
+                                <ul class="social-list">
+                                    <li><a href="#" class="social-icon icon-white"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon icon-white"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon icon-white"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li><a href="#" class="social-icon icon-white"><i
+                                                class="fa fa-youtube-play"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="Contact-right">
+                            <h3>Contact Us</h3>
+                            <form action="#">
+                                <input id="name" type="text" name="full name" placeholder="Full Name" class="form-control" required>
+                                <input type="email" id="email" name="email" placeholder="Email Address" class="form-control" required>
+                                <input type="number" id="number" name="number" placeholder="Phone Number" class="form-control" required>
+                                <textarea name="message" id="text" rows="5" placeholder="Message....." class="form-control"></textarea>
+                                <div id="send-btn"> <button onclick="addDetail(event)" class="btn btn-lg btn-general btn-white" type="submit" ole="button">Send</button> </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="footer-copyrights">
+                            <p>Copyrights &copy; 2020 All Rights Reserved By Softtechnic.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hidden-sm hidden-xs">
+                        <div id="footer-manu">
+                            <ul>
+                                <li><a class="smooth-scroll" href="#home">Home</a>/</li>
+                                <li><a class="smooth-scroll" href="#service">Services</a>/</li>
+                                <li><a class="smooth-scroll" href="#about">About</a>/</li>
+                                <!-- <li><a class="smooth-scroll" href="#work">Work</a>/</li> -->
+                                <li><a class="smooth-scroll" href="#team">Team</a>/</li>
+                                <li><a class="smooth-scroll" href="#testimonials">Testimonial</a>/</li>
+                                <!-- <li><a class="smooth-scroll" href="#pricing">Pricing</a>/</li> -->
+                                <!-- <li><a class="smooth-scroll" href="#stats">Stats</a>/</li> -->
+                                <li><a class="smooth-scroll" href="#clients">Clients</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </footer>
+
+    <!--Add java Script And JQuery -->
+    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="JS/Bootstrap/bootstrap.min.js"></script>
+    <script src="JS/wow/wow.min.js"></script>
+    <script src="JS/Magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="JS/Owl/owl.carousel.min.js"></script>
+    <script src="JS/custom.js"></script>
+    <script src="JS/counter/jquery.waypoints.min.js"></script>
+    <script src="JS/counter/jquery.counterup.min.js"></script>
+    <script src="JS/easing/easing.js"></script>
+</body>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+</html>
+
+<!--Testimonial
+<section id="">
+  <div class="content-box">
+    <div class="content-title wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+      <h3>Our Team</h3>
+      <div class="content-title-underline"></div>
+    </div>
+    <div class="container">
+      <div class="row wow animated fadeInUp"  date-wow-duration="1s" data-wow-delay=".5s">
+        <div class="col-md-*4"> </div>
+      </div>
+    </div>
+  </div>
+</section-->
